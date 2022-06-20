@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <!-- "reference" //引用
+    "color" //颜色
+    "boolean" //布尔值
+    "dimension" //尺寸值
+    "float" //浮点值
+    "integer" //整型值
+    "string" //字符串
+    "fraction" //百分数,比如200%-->
+    <declare-styleable name="DrawView">
+        <attr name="type" format="string"/>
+        <attr name="color" format="color"/>
+    </declare-styleable>
+</resources>
