@@ -8,6 +8,7 @@ import android.util.AttributeSet
 import android.view.View
 import androidx.core.content.res.ResourcesCompat
 import priscilla.draw.R
+import priscilla.draw.getColorPrimary
 
 /**
 Created by Zebra-RD张先杰 on 2022年6月20日16:58:23
@@ -24,16 +25,19 @@ class DrawView : View {
 
     constructor(context: Context, attrs: AttributeSet?, defStyleAttr: Int) :
             super(context, attrs, defStyleAttr)
-    private var mDrawColor:Int = Resources.getSystem().configuration.
+
+    private var mDrawColor: Int =  context.getColorPrimary()
     private var mDrawType = DRAW_CIRCLE
     private fun obtainAttributes(context: Context, attrs: AttributeSet) {
+
         val ta = context.obtainStyledAttributes(attrs, R.styleable.DrawView)
         //画的形状
         mDrawType = when (ta.getString(R.styleable.DrawView_type)) {
             "circle" -> DRAW_CIRCLE
             else -> DRAW_CIRCLE
         }
-        mDrawColor = ta.getColor(R.styleable.DrawView_color,ResourcesCompat.getColor(resources,R.color.black,null))
+        mDrawColor = ta.getColor(R.styleable.DrawView_color,
+            getContext().getColorPrimary())
         ta.recycle()
     }
 
