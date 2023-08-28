@@ -14,10 +14,10 @@
         android:theme="@style/Theme.Androiddrawdemo"
         tools:targetApi="31">
         <activity
-            android:name=".ViewShowActivity"
+            android:name=".base.ViewShowActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".base.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

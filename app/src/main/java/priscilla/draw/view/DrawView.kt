@@ -5,12 +5,13 @@ import android.graphics.Canvas
 import android.graphics.Paint
 import android.util.AttributeSet
 import android.view.View
+import android.widget.Toast
 import priscilla.draw.R
 
 /**
 Created by Zebra-RD张先杰 on 2022年6月20日16:58:23
 
-Description:
+Description:演示用View
  */
 class DrawView : View {
     public val DRAW_CIRCLE: Int = 1
@@ -59,5 +60,8 @@ class DrawView : View {
             }
 
         }
+    }
+    //自动调用的方法
+    fun initialize(){
     }
 }
