@@ -7,17 +7,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-
-
-    <LinearLayout
-        android:orientation="vertical"
-        android:gravity="center_horizontal"
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-
-        <priscilla.draw.view.DrawView
-            android:layout_width="180dp"
-            android:layout_height="match_parent"
-            app:type="circle" />
-    </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            style="@style/Formit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </FrameLayout>
 </ScrollView>

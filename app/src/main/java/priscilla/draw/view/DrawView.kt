@@ -1,14 +1,11 @@
 package priscilla.draw.view
 
 import android.content.Context
-import android.content.res.Resources
 import android.graphics.Canvas
 import android.graphics.Paint
 import android.util.AttributeSet
 import android.view.View
-import androidx.core.content.res.ResourcesCompat
 import priscilla.draw.R
-import priscilla.draw.getColorPrimary
 
 /**
 Created by Zebra-RD张先杰 on 2022年6月20日16:58:23
