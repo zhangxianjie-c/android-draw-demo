@@ -1,4 +1,4 @@
-package priscilla.draw.view
+package priscilla.draw.utils
 
 import android.content.Context
 import android.content.res.Resources

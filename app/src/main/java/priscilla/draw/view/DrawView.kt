@@ -5,8 +5,8 @@ import android.graphics.Canvas
 import android.graphics.Paint
 import android.util.AttributeSet
 import android.view.View
-import android.widget.Toast
 import priscilla.draw.R
+import priscilla.draw.utils.getColorPrimary
 
 /**
 Created by Zebra-RD张先杰 on 2022年6月20日16:58:23
